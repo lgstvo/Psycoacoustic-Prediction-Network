@@ -46,8 +46,7 @@ class BaseCNN(nn.Model):
         # Fully Connected 2
         self.fc2 = nn.Linear(5, 1)
 
-    def foward(self, x):
-
+    def foward(self, x): 
         out = self.conv1(x)
         out = self.bnorm1(out)
         out = self.relu1(out)
