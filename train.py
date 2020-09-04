@@ -4,10 +4,13 @@ from argparse import ArgumentParser
 def parser_arguments():
     parser = ArgumentParser()
 
+    parser.add_argument()
+
     args = parser_args()
     return args
 
-def train()
+def train(args):
+
 
 if __name__ == "__main__":
 
