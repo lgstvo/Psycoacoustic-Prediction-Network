@@ -49,51 +49,35 @@ class BaseCNN(nn.Module):
 
     def foward(self, x): 
 
-        #print("Input")
-        #print(x.size())
-        #print("Camada [1]: conv1")
         out = self.conv1(x)
-        #print(out.size())
-        #print("Camada [2]: bnorm1")
         out = self.bnorm1(out)
-        #print(out.size())
-        #print("Camada [3]: relu1")
         out = self.relu1(out)
-        #print(out.size())
-        #print("Camada [4]: maxpool1")
         out = self.maxpool1(out)
-        print(out.size())
+        #print(out.size())
 
-        #print("Camada [6]: conv2")
         out = self.conv2(out)
-        #print(out.size())
-        #print("Camada [7]")
         out = self.bnorm2(out)
-        #print(out.size())
-        #print("Camada [8]")
         out = self.relu2(out)
-        #print(out.size())
-        #print("Camada [9]")
         out = self.maxpool2(out)
-        print(out.size())
+        #print(out.size())
 
         out = self.conv3(out)
         out = self.bnorm3(out)
         out = self.relu3(out)
         out = self.maxpool3(out)
-        print(out.size())
+        #print(out.size())
 
         out = self.conv4(out)
         out = self.bnorm4(out)
         out = self.relu4(out)
         out = self.maxpool4(out)
-        print(out.size())
+        #print(out.size())
 
         out = self.conv5(out)
         out = self.bnorm5(out)
         out = self.relu5(out)
         out = self.maxpool5(out)
-        print(out.size())
+        #print(out.size())
 
         out = self.drop1(out)
 
@@ -101,5 +85,5 @@ class BaseCNN(nn.Module):
 
         out = self.fc2(out)
         
-        print(out.size())
+        #print(out.size())
         return out
