@@ -1,5 +1,8 @@
 import model
+import torch
+
 from argparse import ArgumentParser
+from dataloader import
 
 def parser_arguments():
     parser = ArgumentParser()
@@ -19,10 +22,9 @@ def parser_arguments():
     return args
 
 def train(args):
-
+    return 0
 
 if __name__ == "__main__":
-
 
     args = parser_arguments()
     train(args)
